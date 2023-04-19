@@ -1,0 +1,12 @@
+cách để tạo một local repository : git init 
+khi khởi tạo local repo thành công sẽ xuất hiên một thư mục ẩn .git bên trong thư mục dự án
+
+Cách kết nối remote repo với local repo lại với nhau: dùng lệnh git remote add origin kèm url đường dẫn tới source code trên remote
+
+Cách đẩy code lên remote repo:
+B1: đẩy các file có sự thay đổi lên staging area, dùng lệnh git add + tên file nếu muốn đẩy từng file, muốn đẩy tất cả thì dùng lệnh git add . 
+để kiểm tra sự thay đổi ta có thể dùng lệnh git status
+muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging are dùng lệnh git reset.
+B2: tạo ra commit để ghi chú lại sự thay đổi code, chúng ta dùng lệnh git commit -m "lời nhắn"
+muốn kiểm tra các commit đang có dùng git log
+b3: đẩy code từ local repo lên remote repo dể lưu trữ, lần đầu sẽ dùng lệnh git push -u origin master
